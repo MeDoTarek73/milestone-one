@@ -1,0 +1,14 @@
+name: CI-Program
+
+on:
+  push:
+    branches: ["main", "develop"]
+  pull_request:
+    branches: ["main", "develop"]
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Hello world
+        run: echo "Hello world"
